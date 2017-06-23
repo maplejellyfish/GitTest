@@ -3,8 +3,6 @@ using System.Collections;
 
 public class RotateCube : MonoBehaviour {
 
-	[SerializeField] float rotateSpeed = 100;
-
 	// Use this for initialization
 	void Start () {
 	
@@ -12,6 +10,6 @@ public class RotateCube : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate (Vector3.right, Time.deltaTime * rotateSpeed);
+		transform.Rotate (Vector3.right, Time.deltaTime * 300);
 	}
 }
